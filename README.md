@@ -1,0 +1,1 @@
+all my configuration files (except emacs, that is its own project) for my sanity and maybe your curiosity

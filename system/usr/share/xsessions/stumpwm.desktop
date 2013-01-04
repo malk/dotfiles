@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=XSession
+Exec=ssh-agent stumpwm
+TryExec=/usr/bin/stumpwm
+Name=StumpWM
+Comment=Stump Tiling Window Manager
