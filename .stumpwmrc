@@ -1,0 +1,183 @@
+;; -*- lisp -*-
+(in-package :stumpwm)
+;debian=sbcl
+(load-module "sbclfix")
+
+;; Change the Stumpwm prefix key: Use the menu key
+(set-prefix-key (kbd "Menu"))
+
+;; binds a key to a command under the root prefix, also add the case
+;; where the root key remains pressed
+(defun def-key (key command)
+  (define-key *root-map* (kbd key) command))
+
+;; quit the current session
+(def-key "q" "quit")
+
+;; Shortcut to reload the configuration file
+(defcommand reinit () ()
+  "Reload stumpwm config file"
+            (run-commands "reload" "loadrc"))
+(def-key "r" "reinit")
+
+;; Shortcut to lock the screen, xtrlock works and its minimal
+(defcommand lock-screen () ()
+  "lock the screen"
+  (run-or-raise "xtrlock" '(:instance "xtrlock")))
+(def-key "l" "lock-screen")
+
+
+;; unclutter the default keybidding from the keys I never use
+(defun undef-key (key)
+  (undefine-key *root-map* (kbd key)))
+(undef-key "C-e")
+(undef-key "C-c")
+(undef-key "C-b")
+(undef-key "C-m")
+(undef-key "C-n")
+(undef-key "C-SPC")
+(undef-key "C-p")
+(undef-key "C-l")
+(undef-key "C-w")
+(undef-key "C-k")
+(undef-key "C-a")
+
+
+;; ;; I love the Dina font, for some reason this does not work grrrr
+;; (set-font "-*-dina-*-*-*-*-8-*-*-*-*-*-*-*")
+;; must search the real xfontsel string for dina, but xfontsel does
+;; nto see it, and it works just fine under emacs and urxvt.
+
+;; I switch focus using the keyboard, my touchpad often gets in the
+;; way while typing so I ignore it, the others variables are just my
+;; border style
+(setf *mouse-focus-policy* :ignore
+      *normal-border-width* 0
+      *maxsize-border-width* 0
+      *transient-border-width* 0
+      *window-border-style* :tight)
+
+;; replaces the default emacs shortcut with a fullscreen version
+(defcommand emacs () ()
+  "run emacs"
+  (run-or-raise "emacs -mm -T emacs" '(:instance "emacs")))
+(def-key "e" "emacs")
+
+;; call my webrowser-du-jour
+(defcommand web () ()
+  "run chromium"
+  (run-or-raise "chromium-browser" '(:instance "chromium-browser")))
+(def-key "w" "web")
+
+
+(defparameter X-TERM "exec rxvt-unicode"
+   "My terminal of choice is Emacs itself, but i failover to urxvt if needed")
+(defcommand console () ()
+  "run rxvt-unicode"
+  (run-or-raise "rxvt-unicode" '(:instance "rxvt-unicode")))
+(def-key "c" "console")
+
+
+(def-key "i" "show-window-properties")
+ 
+;; ;;startup apps
+;; ;; dbus?
+;; ;; ssh-agent?
+
+;; ;; Image viewers can be useful.
+(defparameter X-IMAGE-VIEWER "exec feh"
+  "my image viewer of choice is feh")
+
+;; ;; Shutdown
+(defcommand halt () ()
+  "stops the computer"
+  (run-shell-command "exec gksudo halt"))
+(def-key "Delete" "halt")
+
+;; take a screenshot of the screen (using PrtSc)
+(define-key *top-map* (kbd "Print")
+  "exec import -window root png:$HOME/Documents/screenshots/screen_$(date +%F_%H-%M-%S).png")
+
+;; ;; take a screenshot of a window (using Alt-PrtSc)
+;; ;; TODO Install `scrot'
+(defcommand part-screenshot () ()
+  "Take a screenshot of only the active window."
+  (run-shell-command "scrot -s"))
+(def-key "Print" "part-screenshot")
+
+;; ;; keyboard layout (toggling between "qwerty-gb" and "azwerty-fr" via
+;; ;; `Caps_Lock')
+;; ;; (run-shell-command "setxkbmap -model \"pc105\" -layout \"gb,fr\" -option \"grp:caps_toggle,grp_led:scroll\"")
+;; ;; FIXME grp_led:caps??
+
+
+(def-key "|" "toggle-split")
+
+(setq *shell-program* (stumpwm::getenv "SHELL"))
+
+(setf *startup-message* "Ready to go!")
+(run-commands "emacs")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;**** Window Management
+
+;; push the window in the adjacent frame
+;; (define-key *root-map* (kbd "C-Up") "move-window up")
+;; (define-key *root-map* (kbd "C-Left") "move-window left")
+;; (define-key *root-map* (kbd "C-Down") "move-window down")
+;; (define-key *root-map* (kbd "C-Right") "move-window right")
+;keybinding
+;; (define-key *top-map* (kbd "M-Tab") "pull-hidden-next")
+;; (define-key *top-map* (kbd "M-ISO_Left_Tab") "pull-hidden-previous") ;; shift
+;; (define-key *top-map* (kbd "M-]") "pull-hidden-next")
+;; (define-key *top-map* (kbd "M-[") "pull-hidden-previous")
+;; (define-key *top-map* (kbd "s-Tab") "fnext")
+;; (define-key *top-map* (kbd "s-]") "gnext")
+;; (define-key *top-map* (kbd "s-[") "gprev")
+;; (define-key *top-map* (kbd "s-b") "move-focus left")
+;; (define-key *top-map* (kbd "s-n") "move-focus down")
+;; (define-key *top-map* (kbd "s-p") "move-focus up")
+;; (define-key *top-map* (kbd "s-f") "move-focus right")
+;; (define-key *top-map* (kbd "M-F4") "kill")
+;; (define-key *top-map* (kbd "s-s") "fullscreen")
+;; (define-key *top-map* (kbd "M-F2") "exec")
+;; (define-key *top-map* (kbd "s-SPC") "exec")
+ 
+;; (define-key *root-map* (kbd "M-F") "fullscreen")
+
+
+
+;; for now my swank is broken
+;; (require 'swank)
+;; (swank:create-server)
+
+
+;; ;; load Swank so we can connect with SLIME
+;; (load "/usr/share/emacs/site-lisp/slime/swank-loader.lisp")
+;; (swank-loader:init)
+;; (defvar *swank-p* nil)
+;;
+;; ;; define swank command to start swank server on port 4005
+;; (defcommand swank () ()
+;;   "Starts a swank server on port 4005 and notifies the user."
+;;   (setf stumpwm:*top-level-error-action* :break)
+;;   (if *swank-p*
+;;       (message "Swank server already running.")
+;;     (progn
+;;       (swank:create-server :port 4005
+;;                            :style swank:*communication-style*
+;;                            :dont-close t)
+;;       (setf *swank-p* t)
+;;       (message "Starting swank on port 4005."))))
+
+;; ~ <- does not work with sbcl!!!
+;; (load "~/stumpwm/contrib/cpu.lisp")
+;; (load "~/stumpwm/contrib/mem.lisp")
+;; (load "~/stumpwm/contrib/net.lisp")
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;; TODO
+;; scrot on top level print screen key
