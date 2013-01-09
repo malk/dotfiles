@@ -96,7 +96,7 @@
 
 ;; take a screenshot of the screen (using PrtSc)
 (define-key *top-map* (kbd "Print")
-  "exec import -window root png:$HOME/Documents/screenshots/screen_$(date +%F_%H-%M-%S).png")
+  "exec import -window root png:$HOME/tmp/screen_$(date +%F_%H-%M-%S).png")
 
 ;; ;; take a screenshot of a window (using Alt-PrtSc)
 ;; ;; TODO Install `scrot'
