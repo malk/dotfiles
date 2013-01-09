@@ -1,0 +1,16 @@
+[user]
+	name = Malk’Zameth
+	email = m@zameth.org
+[core]
+	pager = 
+[color]
+	ui = true
+[merge]
+	tool = emerge
+[alias]
+	a = add -p
+	lg = log --pretty=oneline --abbrev-commit --graph --decorate
+	ci = commit -s -m
+	st = status
+	co = checkout
+	mt = mergetool
