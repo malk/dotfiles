@@ -7,6 +7,8 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+EDITOR=emacsclient ; export EDITOR
+
 # clean and start my junkdrawer, it really resides on /tmp which is
 # mounted as tmpfs (so on memory), hence things written there only
 # last a session
