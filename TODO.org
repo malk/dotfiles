@@ -1,0 +1,2 @@
+* TODO when lid closes power saving should kick in
+* TODO on screen lock over time power saving should kick in
