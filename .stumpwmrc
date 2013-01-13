@@ -23,7 +23,7 @@
 ;; Shortcut to lock the screen, xtrlock works and its minimal
 (defcommand lock-screen () ()
   "lock the screen"
-  (run-or-raise "xtrlock" '(:instance "xtrlock")))
+  (run-or-raise "gnome-screensaver-command -l -a" '(:instance "gnome-screensaver")))
 (def-key "l" "lock-screen")
 
 
