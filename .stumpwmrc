@@ -77,9 +77,15 @@
   (run-or-raise "rxvt-unicode" '(:instance "rxvt-unicode")))
 (def-key "c" "console")
 
+(defcommand  aptitude () ()
+  "I do my package managing with aptitude currently (searching a better option on command line)"
+  (run-or-raise "rxvt-unicode -e sudo aptitude" '(:instance "aptitude")))
+(def-key "u" "aptitude")
+
+(def-key "=" "Exec xbacklight -set 100")
 
 (def-key "i" "show-window-properties")
- 
+
 ;; ;;startup apps
 ;; ;; dbus?
 ;; ;; ssh-agent?
@@ -142,7 +148,6 @@
 ;; (define-key *top-map* (kbd "s-s") "fullscreen")
 ;; (define-key *top-map* (kbd "M-F2") "exec")
 ;; (define-key *top-map* (kbd "s-SPC") "exec")
- 
 ;; (define-key *root-map* (kbd "M-F") "fullscreen")
 
 
@@ -177,7 +182,3 @@
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-
-;; TODO
-;; scrot on top level print screen key
