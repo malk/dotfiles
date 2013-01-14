@@ -6,30 +6,11 @@
 ;; Change the Stumpwm prefix key: Use the menu key
 (set-prefix-key (kbd "Menu"))
 
-;; binds a key to a command under the root prefix, also add the case
-;; where the root key remains pressed
-(defun def-key (key command)
-  (define-key *root-map* (kbd key) command))
-
-;; quit the current session
-(def-key "q" "quit")
-
-;; Shortcut to reload the configuration file
-(defcommand reinit () ()
-  "Reload stumpwm config file"
-            (run-commands "reload" "loadrc"))
-(def-key "r" "reinit")
-
-;; Shortcut to lock the screen, xtrlock works and its minimal
-(defcommand lock-screen () ()
-  "lock the screen"
-  (run-or-raise "gnome-screensaver-command -l -a" '(:instance "gnome-screensaver")))
-(def-key "l" "lock-screen")
-
-
-;; unclutter the default keybidding from the keys I never use
+;; delete a kaybidding
 (defun undef-key (key)
   (undefine-key *root-map* (kbd key)))
+
+;; unclutter the default keybidding from the keys I never use
 (undef-key "C-e")
 (undef-key "C-c")
 (undef-key "C-b")
@@ -41,6 +22,51 @@
 (undef-key "C-w")
 (undef-key "C-k")
 (undef-key "C-a")
+(undef-key "0")
+(undef-key "4")
+(undef-key "5")
+(undef-key "6")
+(undef-key "7")
+(undef-key "8")
+(undef-key "9")
+(undef-key "C-0")
+(undef-key "C-1")
+(undef-key "C-2")
+(undef-key "C-3")
+(undef-key "C-4")
+(undef-key "C-5")
+(undef-key "C-6")
+(undef-key "C-7")
+(undef-key "C-8")
+(undef-key "C-9")
+
+;; undef keybidings I want to use elsewhere or move
+(undef-key "1")
+(undef-key "2")
+(undef-key "3")
+(undef-key "s")
+(undef-key "S")
+(undef-key "Q")
+
+
+;; binds a key to a command under the root prefix, also add the case
+;; where the root key remains pressed
+(defun def-key (key command)
+  (define-key *root-map* (kbd key) command))
+
+;; quit the current session
+(def-key "Q" "quit")
+
+;; Shortcut to reload the configuration file
+(defcommand reinit () ()
+  "Reload stumpwm config file"
+            (run-commands "reload" "loadrc"))
+(def-key "r" "reinit")
+
+(defcommand lock-screen () ()
+  "lock the screen"
+  (run-or-raise "gnome-screensaver-command -l -a" '(:instance "gnome-screensaver")))
+(def-key "l" "lock-screen")
 
 
 ;; ;; I love the Dina font, for some reason this does not work grrrr
@@ -77,12 +103,16 @@
   (run-or-raise "rxvt-unicode" '(:instance "rxvt-unicode")))
 (def-key "c" "console")
 
-(defcommand  aptitude () ()
+(defcommand  updater () ()
   "I do my package managing with aptitude currently (searching a better option on command line)"
-  (run-or-raise "rxvt-unicode -e sudo aptitude" '(:instance "aptitude")))
-(def-key "u" "aptitude")
+  (run-or-raise "updater" '(:instance "updater")))
+(def-key "u" "updater")
 
 (def-key "=" "Exec xbacklight -set 100")
+
+(def-key "1" "only")
+(def-key "2" "vsplit")
+(def-key "3" "hsplit")
 
 (def-key "i" "show-window-properties")
 
