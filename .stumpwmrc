@@ -39,6 +39,11 @@
 (undef-key "C-7")
 (undef-key "C-8")
 (undef-key "C-9")
+(undef-key "n")
+(undef-key "C-n")
+(undef-key "p")
+(undef-key "C-n")
+
 
 ;; undef keybidings I want to use elsewhere or move
 (undef-key "1")

@@ -1,0 +1,9 @@
+
+/home/malk/dotfiles/scripts/fix_dialog_error.sh,0
+
+/home/malk/dotfiles/scripts/stumpwm.sh,0
+
+/home/malk/dotfiles/scripts/lein,156
+function make_native_path {make_native_path20,427
+function add_path {add_path30,654
+function download_failed_message {download_failed_message160,4706

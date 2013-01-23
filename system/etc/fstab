@@ -5,9 +5,10 @@
 # that works even if disks are added and removed. See fstab(5).
 #
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
-# / was on /dev/sda2 during installation
-UUID=d878f2df-887d-4c23-832c-e08876caa954 /               ext4    errors=remount-ro 0       1
+# / was on /dev/sdb1 during installation
+UUID=09450b78-fad9-4a83-a33c-a4cc56d6b8a1 /               ext4    discard,noatime,nodiratime,errors=remount-ro 0       1
 # /boot/efi was on /dev/sda1 during installation
-UUID=03A3-473A  /boot/efi       vfat    defaults        0       1
-# swap was on /dev/sda3 during installation
-UUID=6601f133-4fda-4192-9f7a-6f9efe5174a7 none            swap    sw              0       0
+UUID=79E0-2D82  /boot/efi       vfat    defaults        0       1
+# /home was on /dev/sda2 during installation
+UUID=faafec4a-4fc0-48dd-9f0c-75c310d5ac62 /home           ext4    discard,noatime,nodiratime,defaults        0       2
+tmpfs /tmp tmpfs defaults,noatime,mode=1777 0 0
