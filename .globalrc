@@ -1,0 +1,94 @@
+default:\
+	:tc=gtags:tc=exuberant-ctags:
+
+common:\
+	:skip=GPATH,GTAGS,GRTAGS,GSYMS,HTML/,HTML.pub/,html/,tags,TAGS,ID,y.tab.c,y.tab.h,.notfunction,cscope.out,cscope.po.out,cscope.in.out,.gdbinit,SCCS/,RCS/,CVS/,CVSROOT/,{arch}/,.svn/,.git/,.cvsrc,.cvsignore,.gitignore,.cvspass,.cvswrappers,target/,fixtures/,features/,.deps/,autom4te.cache/,.snprj/:\
+
+
+gtags:\
+	:tc=common:\
+	:tc=builtin-parser:
+builtin-parser:\
+	:langmap=c\:.c.h,yacc\:.y,asm\:.s.S,java\:.java,cpp\:.c++.cc.hh.cpp.cxx.hxx.hpp.C.H,php\:.php.php3.phtml:
+
+
+exuberant-ctags|plugin-example|setting to use Exuberant Ctags plug-in parser:\
+	:tc=common:\
+	:langmap=Asm\:.asm.ASM.s.S:\
+	:langmap=Asp\:.asp.asa:\
+	:langmap=Awk\:.awk.gawk.mawk:\
+	:langmap=Basic\:.bas.bi.bb.pb:\
+	:langmap=BETA\:.bet:\
+	:langmap=C\:.c:\
+	:langmap=C++\:.c++.cc.cp.cpp.cxx.h.h++.hh.hp.hpp.hxx.C.H:\
+	:langmap=C#\:.cs:\
+	:langmap=Cobol\:.cbl.cob.CBL.COB:\
+	:langmap=DosBatch\:.bat.cmd:\
+	:langmap=Eiffel\:.e:\
+	:langmap=Erlang\:.erl.ERL.hrl.HRL:\
+	:langmap=Flex\:.as.mxml:\
+	:langmap=Fortran\:.f.for.ftn.f77.f90.f95.F.FOR.FTN.F77.F90.F95:\
+	:langmap=HTML\:.htm.html:\
+	:langmap=Java\:.java:\
+	:langmap=JavaScript\:.js.json.yml:\
+	:langmap=Lisp\:.cl.clisp.el.l.lisp.lsp.clj:\
+	:langmap=Lua\:.lua:\
+	:langmap=MatLab\:.m:\
+	:langmap=OCaml\:.ml.mli:\
+	:langmap=Pascal\:.p.pas:\
+	:langmap=Perl\:.pl.pm.plx.perl:\
+	:langmap=PHP\:.php.php3.phtml:\
+	:langmap=Python\:.py.pyx.pxd.pxi.scons:\
+	:langmap=REXX\:.cmd.rexx.rx:\
+	:langmap=Ruby\:.rb.ruby:\
+	:langmap=Scheme\:.SCM.SM.sch.scheme.scm.sm.ss.rkt:\
+	:langmap=Sh\:.sh.SH.bsh.bash.ksh.zsh:\
+	:langmap=SLang\:.sl:\
+	:langmap=SML\:.sml.sig:\
+	:langmap=SQL\:.sql:\
+	:langmap=Tcl\:.tcl.tk.wish.itcl:\
+	:langmap=Tex\:.tex:\
+	:langmap=Vera\:.vr.vri.vrh:\
+	:langmap=Verilog\:.v:\
+	:langmap=VHDL\:.vhdl.vhd:\
+	:langmap=Vim\:.vim:\
+	:langmap=YACC\:.y:\
+	:gtags_parser=Asm\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Asp\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Awk\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Basic\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=BETA\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=C\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=C++\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=C#\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Cobol\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=DosBatch\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Eiffel\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Erlang\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Flex\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Fortran\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=HTML\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Java\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=JavaScript\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Lisp\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Lua\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=MatLab\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=OCaml\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Pascal\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Perl\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=PHP\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Python\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=REXX\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Ruby\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Scheme\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Sh\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=SLang\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=SML\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=SQL\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Tcl\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Tex\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Vera\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Verilog\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=VHDL\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=Vim\:/usr/local/lib/gtags/exuberant-ctags.la:\
+	:gtags_parser=YACC\:/usr/local/lib/gtags/exuberant-ctags.la:
