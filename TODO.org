@@ -1,7 +1,12 @@
 * DONE when lid closes power saving should kick in
 * DONE on screen lock over time power saving should kick in
 * DONE Make brightness button toggle between back-light 0 and 100
-* TODO downloads on ~/tmp
-** TODO ~/tmp autocreated on session init pointing somewhere sane inside /tmp
-* TODO make the init script more universal currently the system executes a shell script in my personal bin
+* DONE downloads on ~/tmp
+** DONE ~/tmp autocreated on session init pointing somewhere sane inside /tmp
 * DONE make the quit shortcut a little harder to hit on accident
+* TODO make the init script more universal currently the system executes a shell script in my personal bin
+* TODO theming
+** TODO colors
+** TODO fonts
+** TODO center dialogs
+* TODO xrandr

@@ -115,15 +115,27 @@
 
 (def-key "=" "Exec xbacklight -set 100")
 
+
+(defcommand gmail () ()
+  "Opens my email"
+  (run-or-raise "gmail" '(:class "mail.zameth.org" :role "pop-up")))
+(def-key "m" "gmail")
+
+(defcommand gcal () ()
+  "Opens my email"
+  (run-or-raise "gcal" '(:class "calendar.zameth.org" :role "pop-up")))
+(def-key "a" "gcal")
+
+(defcommand trello () ()
+  "Opens my email"
+  (run-or-raise "trello" '(:class "trello.com" :role "pop-up")))
+(def-key "a" "trello")
+
 (def-key "1" "only")
 (def-key "2" "vsplit")
 (def-key "3" "hsplit")
 
 (def-key "i" "show-window-properties")
-
-;; ;;startup apps
-;; ;; dbus?
-;; ;; ssh-agent?
 
 ;; ;; Image viewers can be useful.
 (defparameter X-IMAGE-VIEWER "exec feh"

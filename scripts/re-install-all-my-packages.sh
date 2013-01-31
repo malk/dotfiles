@@ -22,9 +22,19 @@ sudo aptitude install sbcl cl-clx-sbcl cl-ppcre
 sudo aptitude install git emacs24 chromium-browser gnupg2 monkeysphere feh \
 gimp cheese xclip trayer xfce4-power-manager stumpwm oracle-java7-installer \
 grive gtk-chtheme qt4-qtconfig rxvt-unicode-256color xbacklight aspell-fr \
-aspell-br rolldice global id-utils scrot libncurses5-dev exuberant-ctags
+aspell-br rolldice global id-utils scrot libncurses5-dev exuberant-ctags \
+gconf-editor bitlbee xdotool pandoc
 
 # I use GNU global, unfortunately the debian/ubuntu package for global is
 # aeons old and unusable so he drop down to an older style of install
-(umask 022; mkdir /tmp/gnu-global; cd /tmp/gnu-global; wget http://tamacom.com/global/global-6.2.7.tar.gz; tar xzf global-6.2.7.tar.gz; cd global*; ./configure --with-exuberant-ctags=/usr/bin/ctags-exuberant; make; sudo make install)
+(umask 022; mkdir /tmp/gnu-global; cd /tmp/gnu-global; \
+    wget http://tamacom.com/global/global-6.2.7.tar.gz; \
+    tar xzf global-6.2.7.tar.gz; cd global*; \
+    ./configure --with-exuberant-ctags=/usr/bin/ctags-exuberant; make; \
+    sudo make install)
+
+# Clojure is my favored language above all others, lets install my env
+(umask 022; sudo aptitude install clojure1.4 clojure-contrib; cd ~/bin; \
+    wget https://raw.github.com/technomancy/leiningen/stable/bin/lein; \
+    chmod 755 lein; ./lein)
 
