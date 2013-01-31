@@ -1,0 +1,1 @@
+run-or-raise.sh "mail.zameth.org" chromium-browser --app=http://mail.zameth.org/

@@ -1,0 +1,1 @@
+run-or-raise.sh "calendar.zameth.org" chromium-browser --app=http://calendar.zameth.org/
