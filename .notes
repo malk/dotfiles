@@ -1,2 +1,24 @@
 #    -*- mode: org -*-
 
+* Tasks
+** TODO create an emacs function to create a defn for thingatpt
+   [2013-01-31 Thu]
+   [[file:~/dev/social-data-mining/test/social_data_mining/core_test.clj::(fact%20(skware%202)%20%3D>%205)][file:~/dev/social-data-mining/test/social_data_mining/core_test.clj::(fact (skware 2) => 5)]]
+** TODO add nrepl-kill and nrepl-restart functions
+   [2013-01-31 Thu]
+** TODO midje lazytest should be compatible with lazy mode[2013-01-31 Thu]
+** TODO shox dont tell[2013-02-03 Sun]
+** TODO demo is better than images, but images stay, screencast is good but som people dotn want video, loads, what to do?
+   [2013-02-03 Sun]
+** TODO kolab == obm?
+   [2013-02-03 Sun]
+** TODO add 2d tag linking to the slides themselves
+   [2013-02-03 Sun]
+** TODO my photo as a background of the credit pages
+   [2013-02-03 Sun]
+** TODO Every page should have a picture, at least as background? what am I trying to convey that needs no pictures? its it still minimalistic? it is not better to focus on a simple word of small phrase?hmmmm #Prez
+   [2013-02-03 Sun]
+** TODO stumpwm should have a the same "single window and back" as my emacs[2013-02-03 Sun]
+** TODO stympwm should have the freacking golden ration module, is too damn good
+   [2013-02-03 Sun]
+   
