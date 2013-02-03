@@ -113,8 +113,9 @@
   (run-or-raise "updater" '(:instance "updater")))
 (def-key "u" "updater")
 
-(def-key "=" "Exec xbacklight -set 100")
-
+(def-key "-" "Exec xbacklight -set 0")
+(def-key "=" "Exec xbacklight -set 75")
+(def-key "+" "Exec xbacklight -set 100")
 
 (defcommand gmail () ()
   "Opens my email"
