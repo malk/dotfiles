@@ -130,7 +130,7 @@
 (defcommand trello () ()
   "Opens my email"
   (run-or-raise "trello" '(:class "trello.com" :role "pop-up")))
-(def-key "a" "trello")
+(def-key "t" "trello")
 
 (def-key "1" "only")
 (def-key "2" "vsplit")
