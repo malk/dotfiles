@@ -3,6 +3,7 @@
 	email = m@zameth.org
 [core]
 	pager = 
+	excludesfile = ~/.gitignore-global
 [color]
 	ui = true
 [merge]

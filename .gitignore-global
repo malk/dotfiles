@@ -1,0 +1,17 @@
+#Other version systems
+.svn
+.hg
+# Archives
+*.zip
+*.gz
+*.bz2
+# Mac OS
+.DS_Store
+# Vim backup
+*.swp
+# IntelliJ IDEA project config
+.idea/
+*.iws
+*.ipr
+# Emacs backups
+*~
