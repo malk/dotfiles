@@ -10,3 +10,9 @@
 ** TODO fonts
 ** TODO center dialogs
 * TODO xrandr
+* TODO stumpwm should have a the same "single window and back" as my emacs
+* TODO stumpwm should have the freacking golden ration module, is too damn good
+* TODO fetch bulbebee on the assus apparently I can save battery with it
+* TODO stumpwm chrome-as-ap launcher
+* TODO Asus wmi-watch for my laptop apparently it adds something
+
