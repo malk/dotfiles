@@ -15,4 +15,8 @@
 * TODO fetch bulbebee on the assus apparently I can save battery with it
 * TODO stumpwm chrome-as-ap launcher
 * TODO Asus wmi-watch for my laptop apparently it adds something
-
+* TODO backup my fonts to the cloud too
+   [2013-02-11 Mon]
+* TODO Do I have anything that infringe copyrights on github?
+  [2013-02-11 Mon]
+ 
