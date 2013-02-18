@@ -1,3 +1,10 @@
 #    -*- mode: org -*-
 
 * Tasks
+** TODO astrid <-> org-mode
+   [2013-02-13 Wed]
+   [[file:~/dev/clojure-katas/fizzbuzz/test/fizzbuzz/core_test.clj]]
+** TODO copy-paste inside snippet expansion
+   [2013-02-15 Fri]
+   [[file:~/.emacs.d/init.el]]
+   
