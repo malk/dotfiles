@@ -117,13 +117,13 @@
 (def-key "=" "Exec xbacklight -set 75")
 (def-key "+" "Exec xbacklight -set 100")
 
-(defcommand gmail () ()
+(defcommand email () ()
   "Opens my email"
   (run-or-raise "gmail" '(:class "mail.zameth.org" :role "pop-up")))
-(def-key "m" "gmail")
+(def-key "m" "email")
 
 (defcommand gcal () ()
-  "Opens my email"
+  "Opens my calendar"
   (run-or-raise "gcal" '(:class "calendar.zameth.org" :role "pop-up")))
 (def-key "a" "gcal")
 
