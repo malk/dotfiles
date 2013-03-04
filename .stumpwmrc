@@ -86,7 +86,7 @@
       *normal-border-width* 0
       *maxsize-border-width* 0
       *transient-border-width* 0
-      *window-border-style* :tight)
+      *window-border-style* :none)
 
 ;; replaces the default emacs shortcut with a fullscreen version
 (defcommand emacs () ()
