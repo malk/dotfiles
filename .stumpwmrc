@@ -148,16 +148,7 @@
   (run-shell-command "exec gksudo halt"))
 (def-key "Delete" "halt")
 
-;; take a screenshot of the screen (using PrtSc)
-(define-key *top-map* (kbd "Print")
-  "exec import -window root png:$HOME/tmp/screen_$(date +%F_%H-%M-%S).png")
-
-;; ;; take a screenshot of a window (using Alt-PrtSc)
-;; ;; TODO Install `scrot'
-(defcommand part-screenshot () ()
-  "Take a screenshot of only the active window."
-  (run-shell-command "scrot -s"))
-(def-key "Print" "part-screenshot")
+(def-key "Print" "Exec scrot -u -z ~/tmp/%Y-%m-%d_%H:%M:%S.png")
 
 ;; ;; keyboard layout (toggling between "qwerty-gb" and "azwerty-fr" via
 ;; ;; `Caps_Lock')
