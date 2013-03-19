@@ -7,4 +7,69 @@
 ** TODO copy-paste inside snippet expansion
    [2013-02-15 Fri]
    [[file:~/.emacs.d/init.el]]
+** TODO swung-dash for anaphoric programming
+   [2013-02-21 Thu]
+   [[file:~/Documents/clients/romeu/marketing/bio.fr.txt::Insatiable%20curieux,%20Architecte/Software%20Craftsman,%20d%C3%A9batteur%20passionn%C3%A9,%20%CE%BB%E2%80%90calculateur,%20d%C3%A9voreur%20de%20livres,%20R&D/Consultant/agitateur%20%C3%A0%20@Linagora.][file:~/Documents/clients/romeu/marketing/bio.fr.txt::Insatiable curieux, Architecte/Software Craftsman, débatteur passionné, λ‐calculateur, dévoreur de livres, R&D/Consultant/agitateur à @Linagora.]]
+** TODO http://www.meetup.com/The-Paris-Adult-ADHD-support-group/ create a metup account only to add this, you need support
+   [2013-02-22 Fri]
+   [[file:~/Documents/clients/romeu/marketing/bio.en.txt::Insatiable%20curious,%20Architect,%20Software%20Craftsman,%20passionate%20debater,%20%CE%BB%E2%80%90calculist,%20devouring%20bookworm,%20@Linagora%E2%80%99s%20R&D/Consultant/agitator.][file:~/Documents/clients/romeu/marketing/bio.en.txt::Insatiable curious, Architect, Software Craftsman, passionate debater, λ‐calculist, devouring bookworm, @Linagora’s R&D/Consultant/agitator.]]
+** TODO can I use Daytum to make my life a little more publicly quantified?
+   [2013-02-22 Fri]
+** TODO https://github.com/Sarcasm/.emacs.d
+   [2013-02-25 Mon]
+** TODO http://codeherb.com/emacs-config/
+   [2013-02-25 Mon]
+** TODO http://java.ociweb.com/mark/clojure/article.html
+   [2013-02-25 Mon]
+** TODO http://ledger-cli.org/2.6/ledger.html
+   [2013-02-25 Mon]
+** TODO https://github.com/jwiegley/ledger
+   [2013-02-25 Mon]
+** TODO https://github.com/jwiegley/ledger#readme
+   [2013-02-25 Mon]
+** TODO http://orgmode.org/worg/org-contrib/babel/languages/ob-doc-ledger.html
+   [2013-02-25 Mon]
+** TODO https://github.com/jwiegley/ledger
+   [2013-02-25 Mon]
+** TODO http://sachachua.com/blog/2010/11/emacs-recording-ledger-entries-with-org-capture-templates/
+   [2013-02-25 Mon]
+** TODO http://www.emacswiki.org/emacs/LedgerMode
+   [2013-02-25 Mon]
+** TODO pomodoro on emacs (emacs lisp mode or org?)
+   [2013-02-25 Mon]
+   [[file:~/Documents/clients/SODA-DGFIP/hibernate-tools.org::*O%C3%B9][Où]]
+** TODO Something to pose my laptop on at work
+   a higher level with the keyboard nearer my fingers and the screen nearer my eyes would be great
+   [2013-02-25 Mon]
+   [[file:~/Documents/clients/SODA-DGFIP/hibernate-tools.org::*menu%20ou%20aller%20(screenie)][menu ou aller (screenie)]]
+** TODO add gherkin tests to toml or fork toml
+   [2013-02-26 Tue]
+** TODO set-up my blogging, using org and otwards octopress or jerkyll
+   [2013-02-26 Tue]
+** TODO http://people.csail.mit.edu/rivest/sexp.html s-expressions
+   [2013-03-04 Mon]
+   [[file:~/Documents/clients/SODA-DGFIP/TODO.org::*We%20have%20two%20counting%20systems%20(log%20and%20php%20counters)%20we%20should%20merge%20them%20into%20a%20third%20(maybe%20already%20in%20eclipse)][We have two counting systems (log and php counters) we should merge them into a third (maybe already in eclipse)]]
+** TODO add shortcuts to insert unicode arrows maybe some C- or M- with s- with arrow
+   [2013-03-07 Thu]
+   [[file:~/Documents/clients/SODA-DGFIP/hibernate-tools.org::*]]
+** TODO Create my personal home page as a visit card
+   [2013-03-07 Thu]
+   [[file:~/Documents/clients/SODA-DGFIP/hibernate-tools.org::*]]
+*** http://romeu.moura.it
+**** DNS should go to it
+*** Pure static html5
+*** On github pages? or falovrs.me
+*** Mobile Compatible
+*** A good font with real non capital numbers
+*** A big photo of me, highly treated, as a background
+**** see about.me and flavors.me
+*** Just links towards my entire web presence
+*** Explains me in a tweet
+*** puts my tweetsume
+*** linkedIn profile links to it as "personal web page"
+** TODO as soon as I have some nice material on github, put it on my linkedin profile as a portfolio
+   [2013-03-07 Thu]
+   [[file:~/Documents/clients/SODA-DGFIP/hibernate-tools.org::*]]
+** TODO make a org-mode+elisp based jekyll pilot like octopress does it for ruby and the command line
+   [2013-03-19 Tue]
    
