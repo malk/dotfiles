@@ -10,9 +10,6 @@
 ** TODO swung-dash for anaphoric programming
    [2013-02-21 Thu]
    [[file:~/Documents/clients/romeu/marketing/bio.fr.txt::Insatiable%20curieux,%20Architecte/Software%20Craftsman,%20d%C3%A9batteur%20passionn%C3%A9,%20%CE%BB%E2%80%90calculateur,%20d%C3%A9voreur%20de%20livres,%20R&D/Consultant/agitateur%20%C3%A0%20@Linagora.][file:~/Documents/clients/romeu/marketing/bio.fr.txt::Insatiable curieux, Architecte/Software Craftsman, débatteur passionné, λ‐calculateur, dévoreur de livres, R&D/Consultant/agitateur à @Linagora.]]
-** TODO http://www.meetup.com/The-Paris-Adult-ADHD-support-group/ create a metup account only to add this, you need support
-   [2013-02-22 Fri]
-   [[file:~/Documents/clients/romeu/marketing/bio.en.txt::Insatiable%20curious,%20Architect,%20Software%20Craftsman,%20passionate%20debater,%20%CE%BB%E2%80%90calculist,%20devouring%20bookworm,%20@Linagora%E2%80%99s%20R&D/Consultant/agitator.][file:~/Documents/clients/romeu/marketing/bio.en.txt::Insatiable curious, Architect, Software Craftsman, passionate debater, λ‐calculist, devouring bookworm, @Linagora’s R&D/Consultant/agitator.]]
 ** TODO can I use Daytum to make my life a little more publicly quantified?
    [2013-02-22 Fri]
 ** TODO https://github.com/Sarcasm/.emacs.d
@@ -72,4 +69,168 @@
    [[file:~/Documents/clients/SODA-DGFIP/hibernate-tools.org::*]]
 ** TODO make a org-mode+elisp based jekyll pilot like octopress does it for ruby and the command line
    [2013-03-19 Tue]
+** TODO windows virtual machine
+   [2013-03-19 Tue]
+*** same work for XP and windows 7
+*** only the system, mount the data directories
+**** User documents
+**** swap
+***** Mount the swap on /tmp
+**** temp
+***** Mount Temp on /tmp
+**** program files
+*** Enough space for the system and its updates
+*** install the base system
+**** virtualbox additions with 3d install that needs safe mode reboot
+**** intel driver for virtualbox network card
+**** tweakUI
+**** Windows essentials
+*** Pruning
+**** Clean things up
+**** save space
+**** TweakUI
+**** Speed improvements
+**** memory reduction
+*** Backup solution
+**** Every mount that can just hog normal user files should
+**** temp and swap need no backup
+**** TODO backup for the vm itsel
+**** TODO backup for the vmdisk containing the system
+**** TODO backup for the vm files mounted on host system
+*** Activate
+*** Make a clean snapshot at this point
+**** we want to be forever able to return to this specific "virgin" point
+***** so backup the snapshot too
+*** Install VIP software
+**** Liberkey
+**** spybot
+**** ccleaner
+*** Install software needed for client work
+**** pgAdmin
+***** but pg itself should go on the host
+**** eclipses for atelier soda
+** TODO make a real powerline
+   [2013-03-19 Tue]
+*** Does the spiffy current powerline visual
+*** as the current clean version is as much of a library as possible, giving functions to change the modeline
+*** add the power of invisibility/dissapearing/subduing
+**** of colors
+**** of content using dimnish.el
+**** of modeline sections by folding
+*** notifications inside it
+**** dbus!
+**** sauron
+**** alarm
+**** alert
+**** enotify
+**** ERC
+*** is a working systray
+**** no need for external systray programs)
+**** which means I need to fork one of the light ones into emacslisp
+**** trayer?
+*** the emacs way
+**** Everything is a function
+***** you can put on a keybind
+***** you can call programatically
+***** mouse pointer still works
+*** changes have different colors and or blink
+** TODO create a lein template where the project already uses midje kibit and my other goodies
+   [2013-03-19 Tue]
+** TODO full tiling window manager goodness inside emacs itself to control emacs buffers and windows
+   [2013-03-19 Tue]
+*** do not re-invent the wheel, seek what already exists out there
+**** winner mode? what else?
+** TODO Emacs as a windows manager
+   [2013-03-26 Tue]
+   [[file:~/Documents/clients/SODA-DGFIP/hibernate-tools/hibernate-tools.org::*un%20select%20normal][un select normal]]
+** TODO minibuffer pops at the bottom of the current frame on use, and then dissapears after
+   [2013-03-26 Tue]
+   [[file:~/Documents/clients/SODA-DGFIP/hibernate-tools/hibernate-tools.org::*un%20select%20normal][un select normal]]
+** TODO Option for making the modeline appear only on current buffer
+   [2013-03-26 Tue]
+   [[file:~/Documents/clients/SODA-DGFIP/hibernate-tools/hibernate-tools.org::*un%20select%20normal][un select normal]]
+** TODO Option for making the modeline appear subdued and/or translucent on non-current buffers
+   [2013-03-26 Tue]
+   [[file:~/Documents/clients/SODA-DGFIP/hibernate-tools/hibernate-tools.org::*un%20select%20normal][un select normal]]
+** TODO Option for making the modeline appear always at the same place (bottom, or top of current frame) with content changing relatively of the current buffer like the menu bar already does
+   [2013-03-26 Tue]
+   [[file:~/Documents/clients/SODA-DGFIP/hibernate-tools/hibernate-tools.org::*un%20select%20normal][un select normal]]
+** TODO Option to autohide and make reappear that single modeline
+   [2013-03-26 Tue]
+   [[file:~/Documents/clients/SODA-DGFIP/hibernate-tools/hibernate-tools.org::*un%20select%20normal][un select normal]]
+** TODO secondary buffer selection focus stays on current buffer any action not intended for secondary kills secondary selection modeline faces for it
+   [2013-03-26 Tue]
+   [[file:~/Documents/clients/SODA-DGFIP/hibernate-tools/hibernate-tools.org::*Configurer%20Hibernate%20Tools][Configurer Hibernate Tools]]
+** TODO Context-switching.el
+   Serious Emacs management for buffers and frames.
+   [2013-03-27 Wed]
+   [[file:~/Documents/clients/SODA-DGFIP/hibernate-tools/hibernate-tools.org::*Vous%20avez%20du%20code%20,%20vous%20voulez%20le%20mapping%20et%20la%20base.][Vous avez du code , vous voulez le mapping et la base.]]
+*** Lots of stuff listed here is probably aleready available on vanilla emacs, discover those, do not reinvent wheel.
+*** TODO Take Evey Idea I can from existing Tile windows managers and their contribs
+**** TODO Stumpwm
+**** TODO xmonad
+**** TODO Awesome
+*** TODO borrow from prior WM art in emacs
+**** winner mode
+**** any others?
+*** TODO borrown from prior autotiling in emacs
+**** Golden ratio
+**** any others?
+*** TODO thing about serious autotiling alternatives
+*** TODO grab focus colouring
+*** TODO Context management
+**** TODO group buffers in a frame towards an specific purpose
+***** Switch between them
+***** Tile them
+**** TODO Mylin-like task-related filtering of what is to be viewed.
+*** TODO session management
+**** TODO Save current sessions for Emacs re-usage on restart
+***** Remeber one can mix and match terminal and graph emacs: is there a way out of that can of worms?
+**** TODO Save specific current contexts for later retrieval
+***** Save in emacs lisp
+****** That can be put in emacs conf
+******* That one can publish for others to use
+** TODO pomodoro on org mode http://www.emacswiki.org/emacs/pomodoro
+   [2013-04-02 Tue]
+   [[file:~/Documents/clients/SODA-DGFIP/hibernate-tools/hibernate-tools.org::*Cr%C3%A9ez%20un%20fichier%20de%20strat%C3%A9gie%20de%20rennomage][Créez un fichier de stratégie de rennomage]]
+** TODO AutoFS or AMD or havlet for automounting USB drives without starting a gnome session
+   [2013-04-10 Wed]
+** TODO el-get should optionally have package-locally files that are maintaned by the package maintainer if he is so inclined, maybe leveraging carbon
+   [2013-04-15 Mon]
+** TODO regular-data: clojure intersection? urls as clojure fist class? other lisps intersection?
+   [2013-05-07 Tue]
+** TODO org contact for org-emacs
+   [2013-05-31 Fri]
+** TODO http://idorobots.org/2013/03/30/greader-alternative/?utm_source=feedly
+   [2013-05-31 Fri]
+** TODO fully understand namespaces in #clojure
+   [2013-06-04 Tue]
+   [[file:~/Documents/clients/catech/TODO.org]]
+*** how does refer works
+*** how does alias works
+** TODO I need to STOP putting repl-port files everywhere (fnd a way to the repl to create that stuff on temp)
+   [2013-06-25 Tue]
+   [[file:~/Documents/clients/catech/indus-pour-CAS.dot::"Caisse%20Pilote"%20->%20"40%20Caisses"%20%5Blabel%3D"accept%C3%A9"%5D%3B][file:~/Documents/clients/catech/indus-pour-CAS.dot::"Caisse Pilote" -> "40 Caisses" [label="accepté"];]]
+
+
+** TODO reorg my stuff around on google docs
+
+** I need a better power poitn solution
+*** offline
+*** org-friendly
+*** fallback to libreoffice and MSOffice on a VM
+** TODO a fucking SMTP server, for moura.it
+   [2013-06-25 Tue]
+** TODO pull request into git wip making it el-get compliant if needed
+   [2013-06-25 Tue]
+** TODO pull request to el-get making it freaking install git-wip
+   [2013-06-25 Tue]
+** TODO the .quickurls file should be inside .emacs if possible and dotfiles if not
+   [2013-06-25 Tue]
+   [[file:~/.quickurls]]
+** TODO .dmrc should be on dotfiles
+   [2013-06-25 Tue]
+   [[file:~/.dmrc]]
+** TODO I NEED several workspaces, so I can swap windows between relevant work
+   [2013-06-26 Wed]
    
