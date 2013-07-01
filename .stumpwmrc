@@ -22,7 +22,6 @@
 (undef-key "C-w")
 (undef-key "C-k")
 (undef-key "C-a")
-(undef-key "0")
 (undef-key "4")
 (undef-key "5")
 (undef-key "6")
@@ -46,12 +45,14 @@
 
 
 ;; undef keybidings I want to use elsewhere or move
+(undef-key "0")
 (undef-key "1")
 (undef-key "2")
 (undef-key "3")
 (undef-key "s")
 (undef-key "S")
 (undef-key "Q")
+(undef-key "R")
 
 
 ;; binds a key to a command under the root prefix, also add the case
@@ -135,6 +136,8 @@
 (def-key "1" "only")
 (def-key "2" "vsplit")
 (def-key "3" "hsplit")
+(def-key "0" "remove")
+
 
 (def-key "i" "show-window-properties")
 
