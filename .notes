@@ -233,4 +233,16 @@
    [[file:~/.dmrc]]
 ** TODO I NEED several workspaces, so I can swap windows between relevant work
    [2013-06-26 Wed]
-   
+** TODO My working env
+   [2013-09-03 Tue]
+   [[file:~/dev/the-little-clojurer/src/the_little_clojurer/core.clj::(subset?%20'(4%20pounds%20of%20horseradish)%20'(four%20pounds%20of%20chicken%205%20hamburgers%202%20pieces%20fried%20chicken%20light%20duckling%20wings))][file:~/dev/the-little-clojurer/src/the_little_clojurer/core.clj::(subset? '(4 pounds of horseradish) '(four pounds of chicken 5 hamburgers 2 pieces fried chicken light duckling wings))]]
+*** Should work on text files on emacs
+*** Should work on a pure web interface from someone else's machine
+*** Should sync to my backup places automatically
+*** I need to find some powerful ways to make emacs+text_files+org-mode communicate with online tools
+*** I need some flexible way to import odd files people give me, mainly MsOffice filese with no macros/vba
+**** to those few cases I must work on a MsOffie specific stuff, virtual machine it is
+*** Types of files
+**** Glossary
+**** Spreadsheet
+ 

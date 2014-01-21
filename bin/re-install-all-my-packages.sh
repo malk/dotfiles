@@ -25,7 +25,7 @@ grive gtk-chtheme qt4-qtconfig rxvt-unicode-256color xbacklight aspell-fr \
 aspell-br rolldice global id-utils scrot libncurses5-dev exuberant-ctags \
 gconf-editor bitlbee xdotool pandoc p7zip-full p7zip-rar ming-fonts-dejavu \
 ttf-dejavu-extra ttf-dejavu ttf-dejavu-core paps ledger graphviz freemind \
-openjdk-7-jre
+openjdk-7-jre htop
 
 # I use GNU global, unfortunately the debian/ubuntu package for global is
 # aeons old and unusable so he drop down to an older style of install
